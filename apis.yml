@@ -1,0 +1,32 @@
+aid: resurface
+name: Resurface
+description: >-
+  Resurface.io is an API runtime security and analytics platform that captures
+  and analyzes complete API request and response data.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API Analysis
+  - API Security
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/resurface/refs/heads/main/apis.yml
+created: '2026-03-26'
+modified: '2026-03-26'
+specificationVersion: '0.19'
+apis:
+  - aid: resurface:resurface
+    name: Resurface
+    description: >-
+      Resurface.io is an API runtime security and analytics platform that
+      captures and analyzes complete API request and response data.
+    humanURL: https://resurface.io
+    tags:
+      - API Analysis
+      - API Security
+    properties: []
+common:
+  - type: Website
+    url: https://resurface.io
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
