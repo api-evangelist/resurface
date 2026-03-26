@@ -1,32 +1,64 @@
 aid: resurface
 name: Resurface
 description: >-
-  Resurface.io is an API runtime security and analytics platform that captures
-  and analyzes complete API request and response data.
+  Resurface is an API runtime security platform that captures and analyzes
+  complete API request and response payloads in real time. It provides full API
+  call logging, threat detection, data leak prevention, and compliance auditing
+  for API traffic without sampling or aggregation.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - API Analysis
   - API Security
+  - API Analytics
+  - API Logging
+  - Runtime Security
+  - Threat Detection
+  - Data Leak Prevention
+  - API Compliance
 url: >-
   https://raw.githubusercontent.com/api-evangelist/resurface/refs/heads/main/apis.yml
 created: '2026-03-26'
 modified: '2026-03-26'
 specificationVersion: '0.19'
 apis:
-  - aid: resurface:resurface
-    name: Resurface
+  - aid: resurface:resurface-platform
+    name: Resurface Platform
     description: >-
-      Resurface.io is an API runtime security and analytics platform that
-      captures and analyzes complete API request and response data.
+      Resurface captures complete API request and response data in real time,
+      providing full-payload API call logging with no sampling. It enables
+      security teams to detect threats, identify data leaks, and ensure
+      compliance across all API traffic.
     humanURL: https://resurface.io
     tags:
-      - API Analysis
       - API Security
-    properties: []
+      - API Logging
+      - Runtime Security
+      - Threat Detection
+      - API Compliance
+    properties:
+      - type: Documentation
+        url: https://resurface.io/docs
+      - type: GettingStarted
+        url: https://resurface.io/docs/getting-started
 common:
   - type: Website
     url: https://resurface.io
+  - type: Documentation
+    url: https://resurface.io/docs
+  - type: Blog
+    url: https://resurface.io/blog
+  - type: GitHub
+    url: https://github.com/resurfaceio
+  - type: Pricing
+    url: https://resurface.io/pricing
+  - type: Support
+    url: https://resurface.io/support
+  - type: Login
+    url: https://resurface.io/login
+  - type: Twitter
+    url: https://twitter.com/resabordeio
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/resurfaceio
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
