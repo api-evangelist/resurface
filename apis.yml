@@ -8,13 +8,13 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - API Security
   - API Analytics
+  - API Compliance
   - API Logging
+  - API Security
+  - Data Leak Prevention
   - Runtime Security
   - Threat Detection
-  - Data Leak Prevention
-  - API Compliance
 url: >-
   https://raw.githubusercontent.com/api-evangelist/resurface/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -30,11 +30,11 @@ apis:
       compliance across all API traffic.
     humanURL: https://resurface.io
     tags:
-      - API Security
+      - API Compliance
       - API Logging
+      - API Security
       - Runtime Security
       - Threat Detection
-      - API Compliance
     properties:
       - type: Documentation
         url: https://resurface.io/docs
