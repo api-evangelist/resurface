@@ -1,0 +1,23 @@
+{
+  "title": "Resurface API Call Log Structure",
+  "description": "JSON structure documenting the entities and data organization of the Resurface API runtime security platform.",
+  "version": "1.0.0",
+  "entities": {
+    "ApiCallLog": {
+      "description": "A single captured API request/response pair",
+      "fields": ["id", "request_method", "request_url", "request_header", "request_body", "response_code", "response_header", "response_body", "interval_millis", "host", "now", "session_field"]
+    },
+    "LoggingRule": {
+      "description": "A rule controlling what data is logged and how sensitive data is masked",
+      "fields": ["type", "pattern", "action"]
+    },
+    "SecurityAlert": {
+      "description": "A security alert generated from threat detection on API traffic",
+      "fields": ["id", "threatType", "severity", "request_url", "timestamp", "details"]
+    }
+  },
+  "exportFormats": ["NDJSON"],
+  "queryInterface": "SQL",
+  "deployment": ["Kubernetes/Helm", "Docker"],
+  "loggerIntegrations": ["Go/gorilla-mux", "eBPF", "Java", "Python", "Node.js", "Ruby", "Lua", ".NET", "Kong", "Insomnia"]
+}

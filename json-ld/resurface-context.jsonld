@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "resurface": "https://resurface.io/ns/",
+    "security": "https://w3id.org/security#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "ApiCallLog": "resurface:ApiCallLog",
+    "AttackDetection": "resurface:AttackDetection",
+    "LoggingRule": "resurface:LoggingRule",
+    "SecurityEvent": "schema:Event",
+    "DataLeak": "resurface:DataLeak",
+
+    "requestMethod": {
+      "@id": "resurface:requestMethod",
+      "@type": "xsd:string"
+    },
+    "requestUrl": {
+      "@id": "resurface:requestUrl",
+      "@type": "xsd:string"
+    },
+    "requestBody": {
+      "@id": "resurface:requestBody",
+      "@type": "xsd:string"
+    },
+    "responseCode": {
+      "@id": "resurface:responseCode",
+      "@type": "xsd:integer"
+    },
+    "responseBody": {
+      "@id": "resurface:responseBody",
+      "@type": "xsd:string"
+    },
+    "intervalMillis": {
+      "@id": "resurface:intervalMillis",
+      "@type": "xsd:long"
+    },
+    "timestamp": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:dateTime"
+    },
+    "hostField": {
+      "@id": "resurface:host",
+      "@type": "xsd:string"
+    },
+    "threatType": {
+      "@id": "resurface:threatType",
+      "@type": "xsd:string"
+    },
+    "severity": {
+      "@id": "resurface:severity",
+      "@type": "xsd:string"
+    }
+  }
+}

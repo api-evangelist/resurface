@@ -1,0 +1,136 @@
+name: Resurface Vocabulary
+description: >-
+  Domain vocabulary for the Resurface API runtime security and observability
+  platform covering API logging, threat detection, data leak prevention,
+  and security intelligence concepts.
+version: 1.0.0
+created: '2026-05-02'
+modified: '2026-05-02'
+
+terms:
+  - term: API Call Log
+    definition: >-
+      A complete record of an API request and response captured by Resurface,
+      including full request headers, body, response headers, body, timing
+      data, and metadata. Unlike sampling-based approaches, Resurface captures
+      100% of API calls.
+    tags:
+      - Core Concept
+      - Logging
+
+  - term: API Runtime Security
+    definition: >-
+      Security enforcement that operates during the actual execution of API
+      calls, analyzing live traffic to detect attacks, anomalies, and policy
+      violations in real time rather than at build time.
+    tags:
+      - Core Concept
+      - Security
+
+  - term: Attack Detection
+    definition: >-
+      The process of identifying malicious API traffic patterns such as
+      injection attacks, credential stuffing, rate abuse, BOLA/BFLA
+      authorization violations, and data exfiltration attempts.
+    tags:
+      - Security
+      - Threat Detection
+
+  - term: BOLA
+    definition: >-
+      Broken Object Level Authorization — an API security vulnerability where
+      an attacker can access or modify data belonging to another user by
+      manipulating object identifiers in API calls. The most common API security risk.
+    tags:
+      - Security
+      - Vulnerabilities
+
+  - term: Data Leak Prevention
+    definition: >-
+      Detection of sensitive data exposure in API responses, including PII,
+      credentials, tokens, credit card numbers, and other regulated data
+      being returned in API payloads unintentionally.
+    tags:
+      - Compliance
+      - Security
+
+  - term: eBPF Logger
+    definition: >-
+      A kernel-level API call logger using Extended Berkeley Packet Filter
+      technology that captures HTTP traffic without requiring application
+      code changes, enabling zero-instrumentation observability.
+    tags:
+      - Infrastructure
+      - Logging
+
+  - term: Full Payload Logging
+    definition: >-
+      The practice of capturing the complete request and response body for
+      every API call, as opposed to sampling or header-only logging. Resurface
+      stores full payloads to enable deep forensic analysis.
+    tags:
+      - Core Concept
+      - Logging
+
+  - term: NDJSON
+    definition: >-
+      Newline-Delimited JSON — the format used by Resurface for exporting and
+      importing API call logs. Each line is a valid JSON object representing
+      one API call record.
+    tags:
+      - Data Format
+      - Integration
+
+  - term: Replay Attack
+    definition: >-
+      An API security attack where an adversary captures a legitimate API
+      request and resubmits it to gain unauthorized access or trigger
+      unintended actions.
+    tags:
+      - Security
+      - Threats
+
+  - term: Resurface Database
+    definition: >-
+      A custom columnar database optimized for high-volume API log storage and
+      SQL-based querying of API traffic data. Designed to handle complete
+      request/response payloads at scale without sampling.
+    tags:
+      - Core Concept
+      - Infrastructure
+
+  - term: Logging Rules
+    definition: >-
+      Configurable rules in Resurface loggers that control what data is captured
+      and how sensitive data is masked or excluded. Rules provide privacy
+      protection by filtering PII before storage.
+    tags:
+      - Configuration
+      - Privacy
+
+  - term: SQL Query Interface
+    definition: >-
+      The primary mechanism for querying Resurface API log data using standard
+      SQL syntax, enabling security teams to write custom threat hunting
+      and compliance queries.
+    tags:
+      - Core Concept
+      - Analytics
+
+  - term: Threat Intelligence
+    definition: >-
+      Actionable information derived from analyzing API traffic patterns,
+      attack signatures, and behavioral anomalies to identify and respond
+      to security threats.
+    tags:
+      - Security
+      - Analytics
+
+  - term: Zero Trust API Security
+    definition: >-
+      A security model that requires verification of every API request
+      regardless of whether it originates from inside or outside the network
+      perimeter.
+    tags:
+      - Architecture
+      - Security

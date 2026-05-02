@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/resurface/json-schema/resurface-api-call-log-schema.json",
+  "title": "Resurface API Call Log",
+  "description": "A complete API call log record captured by the Resurface runtime security platform, including full request and response payload data.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this API call log record."
+    },
+    "request_method": {
+      "type": "string",
+      "description": "The HTTP method of the request.",
+      "enum": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS", "TRACE"]
+    },
+    "request_url": {
+      "type": "string",
+      "description": "The full URL of the API request."
+    },
+    "request_header": {
+      "type": "array",
+      "description": "Request headers as key-value pairs.",
+      "items": {
+        "type": "array",
+        "items": { "type": "string" },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "request_body": {
+      "type": "string",
+      "description": "The full request body payload."
+    },
+    "response_code": {
+      "type": "integer",
+      "description": "The HTTP status code of the response."
+    },
+    "response_header": {
+      "type": "array",
+      "description": "Response headers as key-value pairs.",
+      "items": {
+        "type": "array",
+        "items": { "type": "string" },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "response_body": {
+      "type": "string",
+      "description": "The full response body payload."
+    },
+    "interval_millis": {
+      "type": "integer",
+      "description": "Time taken to process the request in milliseconds."
+    },
+    "host": {
+      "type": "string",
+      "description": "The hostname that received and processed the API call."
+    },
+    "now": {
+      "type": "string",
+      "description": "Timestamp when the API call was captured, in milliseconds since epoch."
+    },
+    "session_field": {
+      "type": "array",
+      "description": "Custom session fields attached to this log record.",
+      "items": {
+        "type": "array",
+        "items": { "type": "string" },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    }
+  }
+}
