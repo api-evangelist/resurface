@@ -1,0 +1,13 @@
+{
+  "repo": "resurface",
+  "feeds": [
+    {
+      "source": "https://resurface.io/blog",
+      "feed_url": "https://graylog.org/feed/",
+      "saved": 10,
+      "title": "Graylog"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:34:56Z"
+}
