@@ -2,12 +2,20 @@
   "repo": "resurface",
   "feeds": [
     {
-      "source": "https://resurface.io/blog",
+      "source": "https://graylog.org/feed/",
       "feed_url": "https://graylog.org/feed/",
-      "title": "Graylog",
-      "saved": 9
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://resurface.io/docs",
+      "feed_url": "https://graylog.org/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
-  "post_count": 19,
-  "fetched": "2026-05-17T20:48:52Z"
+  "post_count": 27,
+  "fetched": "2026-06-01T23:35:02Z"
 }
