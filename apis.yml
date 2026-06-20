@@ -7,7 +7,7 @@ description: >-
   prevention, and compliance auditing for API traffic without sampling or aggregation.
   Acquired by Graylog and integrated into the Graylog SIEM platform.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - API Analytics
   - API Compliance
