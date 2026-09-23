@@ -1,0 +1,29 @@
+# Front Door AI Index — resurface — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: resurface
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: resurface.io
+  final_host: graylog.org
+  ownership: inherited
+  owner: resurface
+  shares_host_with: null
+  inherited_from: graylog.org
+  verdict: scored
+  score: null
+  host_score: 10
+  density: null
+  words: 1544
+  tiers:
+    agentic: 1
+    core: 9
+    model: 0
+  ambiguous: 2
+  top_terms:
+    AI: 8
+    AI agent: 1
+    ML: 1
+    agent: 1
+    automation: 1
