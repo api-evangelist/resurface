@@ -142,6 +142,12 @@ apis:
       - type: GitHub
         url: https://github.com/resurfaceio/trino-connector
 common:
+  - type: Plans
+    url: plans/resurface-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/resurface-rate-limits.yml
+  - type: FinOps
+    url: finops/resurface-finops.yml
   - type: DomainSecurity
     url: security/resurface-domain-security.yml
   - type: Website
