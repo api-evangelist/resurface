@@ -64,96 +64,139 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Resurface (now Graylog API Security) is an API runtime security and observability platform that captures and analyzes complete API request and response payloads in real time. It provides full API call logging, threat detection, data leak prevention, and compliance auditing for API traffic without sampling or aggregation. Resurface was acquired by Graylog and integrated into the Graylog SIEM platform.
+Resurface (now Graylog API Security) is an API runtime security and observability platform that captures and analyzes complete API request and response payloads in real time. It provides full API call logging, threat detection, data leak prevention, and compliance auditing for API traffic without sampling or aggregation. Acquired by Graylog and integrated into the Graylog SIEM platform.
 
-**URL:** [https://raw.githubusercontent.com/api-evangelist/resurface/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/resurface/refs/heads/main/apis.yml)
+**Areas:** API Analytics · API Compliance · API Logging · API Observability · API Security · Data Leak Prevention · Runtime Security · SIEM · Threat Detection
 
-## Scope
+## Resurface on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Resurface is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/resurface/](https://apis.io/providers/resurface/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-- API Analytics, API Compliance, API Logging, API Observability, API Security, Data Leak Prevention, Runtime Security, SIEM, Threat Detection
+- [Resurface Platform](https://apis.io/apis/resurface/resurface-platform/) — Resurface captures complete API request and response data in real time, providing full-payload API call logging with no sampling. Security teams use it to…
+- [Resurface Logger for Go](https://apis.io/apis/resurface/resurface-logger-go/) — Open-source Go library for logging API requests and responses to the Resurface database. Integrates with gorilla/mux and other Go HTTP frameworks.
+- [Resurface Logger for eBPF](https://apis.io/apis/resurface/resurface-logger-ebpf/) — eBPF-based kernel-level API call logger that captures HTTP traffic without application code changes for zero-instrumentation observability.
+- [Resurface Containers](https://apis.io/apis/resurface/resurface-containers/) — Official Helm charts and container images for deploying the Resurface API security database on Kubernetes.
+- [Resurface Trino Connector](https://apis.io/apis/resurface/resurface-trino-connector/) — Connector for querying Resurface API call data via Trino distributed SQL query engine.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-26
-- **Modified:** 2026-05-02
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON Schema (1)
 
-### Resurface Platform
+The data models the API reads and writes.
 
-Resurface captures complete API request and response data in real time, providing full-payload API call logging with no sampling. Security teams use it to detect threats, identify data leaks, and ensure compliance across all API traffic using a custom columnar database and SQL query interface.
+- [Resurface API Call Log](https://apis.io/schemas/resurface/resurface-api-call-log/)
 
-**Human URL:** [https://resurface.io](https://resurface.io)
+#### JSON Structure (1)
 
-#### Tags
+Data models expressed in JSON Structure.
 
-- API Compliance, API Logging, API Observability, API Security, Runtime Security, Threat Detection
+- [Resurface Api Call Log Structure](https://apis.io/json-structure/resurface/resurface-api-call-log-structure/)
 
-#### Properties
+#### JSON-LD (1)
 
+Linked-data contexts for the provider's vocabulary.
+
+- [Resurface Context](https://apis.io/jsonld/resurface/resurface-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Resurface Vocabulary](https://apis.io/vocabularies/resurface/resurface-vocabulary/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Resurface — jsonschema rules](https://apis.io/rules/resurface/resurface-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Resurface Domain Security](https://apis.io/security/resurface/resurface-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Resurface Plans Pricing](https://apis.io/plans/resurface/resurface-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Resurface Rate Limits](https://apis.io/rate-limits/resurface/resurface-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Resurface Finops](https://apis.io/finops/resurface/resurface-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://resurface.io)
 - [Documentation](https://resurface.io/docs)
-- [Getting Started](https://resurface.io/docs/getting-started)
-- [Helm Chart](https://artifacthub.io/packages/helm/resurfaceio/resurface)
-- [GitHub](https://github.com/resurfaceio)
+- [Pricing](https://resurface.io/pricing)
+- [Support](https://resurface.io/support)
+- [Blog](https://resurface.io/blog)
 
-### Resurface Logger for Go
+## API Evangelist rating
 
-Open-source Go library for logging API requests and responses to the Resurface database. Supports gorilla/mux and other Go HTTP frameworks.
+**Kin Score 20.4** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Human URL:** [https://github.com/resurfaceio/logger-go](https://github.com/resurfaceio/logger-go)
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 21.9 |
+| Contract governance | 23.5 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 14.5 |
 
-### Resurface Logger for eBPF
+**Agent readiness 0.6** — human-only
 
-eBPF-based kernel-level API call logger enabling zero-instrumentation API observability for containerized environments.
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-**Human URL:** [https://github.com/resurfaceio/logger-ebpf](https://github.com/resurfaceio/logger-ebpf)
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
 
-### Resurface Containers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/resurface/](https://apis.io/providers/resurface/).
 
-Official Helm charts and container images for deploying Resurface on Kubernetes.
+## How this profile is made
 
-**Human URL:** [https://resurfaceio.github.io/containers/](https://resurfaceio.github.io/containers/)
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-### Resurface Trino Connector
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Resurface: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-Connector for querying Resurface API call data via Trino distributed SQL query engine.
+## Open an issue
 
-**Human URL:** [https://github.com/resurfaceio/trino-connector](https://github.com/resurfaceio/trino-connector)
-
-## Artifacts
-
-### JSON Schemas
-
-- [`json-schema/resurface-api-call-log-schema.json`](json-schema/resurface-api-call-log-schema.json) — Schema for Resurface API call log records.
-
-### JSON Structure
-
-- [`json-structure/resurface-api-call-log-structure.json`](json-structure/resurface-api-call-log-structure.json) — Structure documenting Resurface entities, export formats, and logger integrations.
-
-### JSON-LD Context
-
-- [`json-ld/resurface-context.jsonld`](json-ld/resurface-context.jsonld) — JSON-LD context mapping Resurface API security vocabulary to schema.org.
-
-### Vocabulary
-
-- [`vocabulary/resurface-vocabulary.yml`](vocabulary/resurface-vocabulary.yml) — Domain vocabulary covering 14 key API security and observability terms.
-
-## Links
-
-- **Website**: [resurface.io](https://resurface.io)
-- **Documentation**: [resurface.io/docs](https://resurface.io/docs)
-- **GitHub Organization**: [github.com/resurfaceio](https://github.com/resurfaceio)
-- **Helm Chart**: [artifacthub.io/packages/helm/resurfaceio/resurface](https://artifacthub.io/packages/helm/resurfaceio/resurface)
-- **Acquired By**: [Graylog](https://graylog.org)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/resurface/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
